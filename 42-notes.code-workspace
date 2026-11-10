@@ -1,0 +1,14 @@
+{
+    "folders": [
+        {
+            "name": "42-note",
+            "path": "."
+        }
+    ],
+    "settings": {
+        "clangd.arguments": [
+            "--log=verbose",
+            "--query-driver=/Users/snafu/.platformio/packages/toolchain-xtensa-esp-elf@14.2.0+20260121/bin/xtensa-esp32s3-elf-*"
+        ]
+    }
+}

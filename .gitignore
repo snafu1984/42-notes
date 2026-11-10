@@ -1,17 +1,45 @@
-# ── Arduino / ESP32 build artifacts ──────────────────────────────────────────
-build/
+
+# PlatformIO
+.pio/
+.piolibdeps/
+
+# Compiled firmware and binaries
 *.bin
 *.elf
-*.map
 *.hex
+*.map
 
-# ── macOS / editor cruft ─────────────────────────────────────────────────────
-.DS_Store
-*.bak
-*.swp
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# IDE settings
 .vscode/
+.idea/
+*.swp
+*.swo
 
-# ── Safety: never commit real credentials ────────────────────────────────────
-# secrets.h ships with "...." placeholders and is safe to track. If you ever
-# paste REAL keys into it, uncomment the next line FIRST so git ignores it:
-# secrets.h
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Logs
+*.log
+
+# Secrets and credentials
+secrets.ini
+.env
+.env.*
+!.env.example
+
+# PlatformIO
+.pio/
+.piolibdeps/
+
+# clangd
+.cache/
+compile_commands.json
+
+
